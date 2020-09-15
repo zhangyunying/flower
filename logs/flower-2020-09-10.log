@@ -1,0 +1,392 @@
+2020-09-10 09:16:18.501 [INFO ] com.flower.FlowerApplication - Starting FlowerApplication on LAPTOP-6S1ADEMD with PID 13756 (D:\FileRecv\2\flower\target\classes started by 张耘荧 in D:\FileRecv\2\flower)
+2020-09-10 09:16:18.517 [INFO ] com.flower.FlowerApplication - No active profile set, falling back to default profiles: default
+2020-09-10 09:16:21.127 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-10 09:16:21.128 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-10 09:16:21.316 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 173ms. Found 12 repository interfaces.
+2020-09-10 09:16:21.362 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-10 09:16:21.363 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-10 09:16:21.398 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.AddressRepository.
+2020-09-10 09:16:21.398 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.CommentRepository.
+2020-09-10 09:16:21.398 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.DynamicRepository.
+2020-09-10 09:16:21.399 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.FlowerRepository.
+2020-09-10 09:16:21.399 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.SellerRepository.
+2020-09-10 09:16:21.399 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ServiceOrderRepository.
+2020-09-10 09:16:21.400 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ServicePeoPleRepository.
+2020-09-10 09:16:21.400 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ServiceRepository.
+2020-09-10 09:16:21.400 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ShoppingCartRepository.
+2020-09-10 09:16:21.400 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.SupplyRepository.
+2020-09-10 09:16:21.401 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.UserOrderRepository.
+2020-09-10 09:16:21.401 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.UserRepository.
+2020-09-10 09:16:21.401 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2020-09-10 09:16:21.976 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c801f362] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-10 09:16:22.693 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-09-10 09:16:22.730 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-09-10 09:16:22.740 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-10 09:16:22.741 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-09-10 09:16:22.986 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-10 09:16:22.987 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4310 ms
+2020-09-10 09:16:23.586 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-09-10 09:16:24.147 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-09-10 09:16:24.285 [INFO ] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-09-10 09:16:24.503 [INFO ] org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-09-10 09:16:24.506 [INFO ] org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-09-10 09:16:25.080 [INFO ] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-09-10 09:16:25.400 [INFO ] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-09-10 09:16:26.710 [INFO ] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-10 09:16:27.411 [INFO ] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-09-10 09:16:28.800 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-09-10 09:16:28.836 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2020-09-10 09:16:28.838 [INFO ] com.flower.FlowerApplication - Started FlowerApplication in 11.503 seconds (JVM running for 13.381)
+2020-09-10 09:20:49.314 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-10 09:20:49.314 [INFO ] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-10 09:20:49.530 [INFO ] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 216 ms
+2020-09-10 09:31:12.626 [INFO ] com.flower.FlowerApplication - Starting FlowerApplication on LAPTOP-6S1ADEMD with PID 15912 (D:\FileRecv\2\flower\target\classes started by 张耘荧 in D:\FileRecv\2\flower)
+2020-09-10 09:31:12.628 [INFO ] com.flower.FlowerApplication - No active profile set, falling back to default profiles: default
+2020-09-10 09:31:14.167 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-10 09:31:14.168 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-10 09:31:14.359 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 134ms. Found 12 repository interfaces.
+2020-09-10 09:31:14.413 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-10 09:31:14.414 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-10 09:31:14.444 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.AddressRepository.
+2020-09-10 09:31:14.444 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.CommentRepository.
+2020-09-10 09:31:14.445 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.DynamicRepository.
+2020-09-10 09:31:14.445 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.FlowerRepository.
+2020-09-10 09:31:14.445 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.SellerRepository.
+2020-09-10 09:31:14.446 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ServiceOrderRepository.
+2020-09-10 09:31:14.446 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ServicePeoPleRepository.
+2020-09-10 09:31:14.446 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ServiceRepository.
+2020-09-10 09:31:14.446 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ShoppingCartRepository.
+2020-09-10 09:31:14.447 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.SupplyRepository.
+2020-09-10 09:31:14.447 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.UserOrderRepository.
+2020-09-10 09:31:14.447 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.UserRepository.
+2020-09-10 09:31:14.447 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+2020-09-10 09:31:14.779 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cd869b3a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-10 09:31:15.407 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-09-10 09:31:15.420 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-09-10 09:31:15.428 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-10 09:31:15.428 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-09-10 09:31:15.613 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-10 09:31:15.614 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2916 ms
+2020-09-10 09:31:16.055 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-09-10 09:31:16.437 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-09-10 09:31:16.614 [INFO ] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-09-10 09:31:17.018 [INFO ] org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-09-10 09:31:17.020 [INFO ] org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-09-10 09:31:17.600 [INFO ] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-09-10 09:31:17.861 [INFO ] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-09-10 09:31:19.939 [INFO ] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-10 09:31:20.648 [INFO ] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-09-10 09:31:21.756 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-09-10 09:31:21.844 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2020-09-10 09:31:21.846 [INFO ] com.flower.FlowerApplication - Started FlowerApplication in 9.95 seconds (JVM running for 11.587)
+2020-09-10 09:31:47.537 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-10 09:31:47.537 [INFO ] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-10 09:31:47.544 [INFO ] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2020-09-10 09:39:19.231 [INFO ] com.flower.FlowerApplication - Starting FlowerApplication on LAPTOP-6S1ADEMD with PID 19444 (D:\FileRecv\2\flower\target\classes started by 张耘荧 in D:\FileRecv\2\flower)
+2020-09-10 09:39:19.235 [INFO ] com.flower.FlowerApplication - No active profile set, falling back to default profiles: default
+2020-09-10 09:39:19.917 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-10 09:39:19.917 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-10 09:39:20.037 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 112ms. Found 12 repository interfaces.
+2020-09-10 09:39:20.047 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-10 09:39:20.048 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-10 09:39:20.070 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.AddressRepository.
+2020-09-10 09:39:20.070 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.CommentRepository.
+2020-09-10 09:39:20.071 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.DynamicRepository.
+2020-09-10 09:39:20.071 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.FlowerRepository.
+2020-09-10 09:39:20.072 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.SellerRepository.
+2020-09-10 09:39:20.072 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ServiceOrderRepository.
+2020-09-10 09:39:20.072 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ServicePeoPleRepository.
+2020-09-10 09:39:20.072 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ServiceRepository.
+2020-09-10 09:39:20.073 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ShoppingCartRepository.
+2020-09-10 09:39:20.073 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.SupplyRepository.
+2020-09-10 09:39:20.073 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.UserOrderRepository.
+2020-09-10 09:39:20.074 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.UserRepository.
+2020-09-10 09:39:20.074 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+2020-09-10 09:39:20.345 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6a6b0503] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-10 09:39:20.564 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-09-10 09:39:20.575 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-09-10 09:39:20.583 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-10 09:39:20.583 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-09-10 09:39:20.712 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-10 09:39:20.712 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1434 ms
+2020-09-10 09:39:20.843 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-09-10 09:39:21.017 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-09-10 09:39:21.077 [INFO ] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-09-10 09:39:21.149 [INFO ] org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-09-10 09:39:21.151 [INFO ] org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-09-10 09:39:21.291 [INFO ] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-09-10 09:39:21.442 [INFO ] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-09-10 09:39:22.113 [INFO ] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-10 09:39:22.435 [INFO ] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-09-10 09:39:23.082 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-09-10 09:39:23.107 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2020-09-10 09:39:23.109 [INFO ] com.flower.FlowerApplication - Started FlowerApplication in 4.378 seconds (JVM running for 5.42)
+2020-09-10 09:39:31.666 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-10 09:39:31.666 [INFO ] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-10 09:39:31.835 [INFO ] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 169 ms
+2020-09-10 11:17:38.616 [INFO ] com.flower.FlowerApplication - Starting FlowerApplication on LAPTOP-6S1ADEMD with PID 21428 (D:\FileRecv\2\flower\target\classes started by 张耘荧 in D:\FileRecv\2\flower)
+2020-09-10 11:17:38.637 [INFO ] com.flower.FlowerApplication - No active profile set, falling back to default profiles: default
+2020-09-10 11:17:40.964 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-10 11:17:40.964 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-10 11:17:41.171 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 156ms. Found 12 repository interfaces.
+2020-09-10 11:17:41.236 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-10 11:17:41.238 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-10 11:17:41.277 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.AddressRepository.
+2020-09-10 11:17:41.278 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.CommentRepository.
+2020-09-10 11:17:41.278 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.DynamicRepository.
+2020-09-10 11:17:41.279 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.FlowerRepository.
+2020-09-10 11:17:41.279 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.SellerRepository.
+2020-09-10 11:17:41.280 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ServiceOrderRepository.
+2020-09-10 11:17:41.280 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ServicePeoPleRepository.
+2020-09-10 11:17:41.280 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ServiceRepository.
+2020-09-10 11:17:41.280 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ShoppingCartRepository.
+2020-09-10 11:17:41.281 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.SupplyRepository.
+2020-09-10 11:17:41.281 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.UserOrderRepository.
+2020-09-10 11:17:41.281 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.UserRepository.
+2020-09-10 11:17:41.281 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+2020-09-10 11:17:41.944 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ee824610] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-10 11:17:42.541 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-09-10 11:17:42.562 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-09-10 11:17:42.569 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-10 11:17:42.569 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-09-10 11:17:42.721 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-10 11:17:42.721 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3919 ms
+2020-09-10 11:17:43.084 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-09-10 11:17:43.634 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-09-10 11:17:43.816 [INFO ] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-09-10 11:17:44.043 [INFO ] org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-09-10 11:17:44.044 [INFO ] org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-09-10 11:17:44.608 [INFO ] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-09-10 11:17:44.959 [INFO ] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-09-10 11:17:46.322 [INFO ] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-10 11:17:46.935 [INFO ] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-09-10 11:17:48.457 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-09-10 11:17:48.496 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2020-09-10 11:17:48.499 [INFO ] com.flower.FlowerApplication - Started FlowerApplication in 11.251 seconds (JVM running for 12.702)
+2020-09-10 18:37:41.041 [INFO ] com.flower.FlowerApplication - Starting FlowerApplication on LAPTOP-6S1ADEMD with PID 3760 (D:\FileRecv\2\flower\target\classes started by 张耘荧 in D:\FileRecv\2\flower)
+2020-09-10 18:37:41.085 [INFO ] com.flower.FlowerApplication - No active profile set, falling back to default profiles: default
+2020-09-10 18:37:44.202 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-10 18:37:44.202 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-10 18:37:44.503 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 287ms. Found 12 repository interfaces.
+2020-09-10 18:37:44.563 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-10 18:37:44.564 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-10 18:37:44.625 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.AddressRepository.
+2020-09-10 18:37:44.626 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.CommentRepository.
+2020-09-10 18:37:44.626 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.DynamicRepository.
+2020-09-10 18:37:44.627 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.FlowerRepository.
+2020-09-10 18:37:44.627 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.SellerRepository.
+2020-09-10 18:37:44.627 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ServiceOrderRepository.
+2020-09-10 18:37:44.628 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ServicePeoPleRepository.
+2020-09-10 18:37:44.628 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ServiceRepository.
+2020-09-10 18:37:44.628 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ShoppingCartRepository.
+2020-09-10 18:37:44.628 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.SupplyRepository.
+2020-09-10 18:37:44.629 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.UserOrderRepository.
+2020-09-10 18:37:44.629 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.UserRepository.
+2020-09-10 18:37:44.629 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+2020-09-10 18:37:45.284 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a7db455c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-10 18:37:46.012 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-09-10 18:37:46.050 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-09-10 18:37:46.072 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-10 18:37:46.072 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-09-10 18:37:46.403 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-10 18:37:46.403 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5009 ms
+2020-09-10 18:37:46.804 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-09-10 18:37:52.264 [INFO ] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-09-10 18:37:52.514 [INFO ] org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-09-10 18:37:52.517 [INFO ] org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-09-10 18:37:53.302 [INFO ] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-09-10 18:37:53.680 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-09-10 18:37:58.762 [INFO ] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-09-10 18:37:58.803 [INFO ] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000422: Disabling contextual LOB creation as connection was null
+2020-09-10 18:38:00.333 [INFO ] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-10 18:38:00.335 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-09-10 18:38:06.064 [INFO ] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-09-10 18:38:07.518 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-09-10 18:38:07.556 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2020-09-10 18:38:07.558 [INFO ] com.flower.FlowerApplication - Started FlowerApplication in 28.487 seconds (JVM running for 34.246)
+2020-09-10 18:38:20.188 [INFO ] com.flower.FlowerApplication - Starting FlowerApplication on LAPTOP-6S1ADEMD with PID 2952 (D:\FileRecv\2\flower\target\classes started by 张耘荧 in D:\FileRecv\2\flower)
+2020-09-10 18:38:20.192 [INFO ] com.flower.FlowerApplication - No active profile set, falling back to default profiles: default
+2020-09-10 18:38:20.808 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-10 18:38:20.809 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-10 18:38:20.937 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 120ms. Found 12 repository interfaces.
+2020-09-10 18:38:20.947 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-10 18:38:20.948 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-10 18:38:20.972 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.AddressRepository.
+2020-09-10 18:38:20.972 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.CommentRepository.
+2020-09-10 18:38:20.973 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.DynamicRepository.
+2020-09-10 18:38:20.974 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.FlowerRepository.
+2020-09-10 18:38:20.974 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.SellerRepository.
+2020-09-10 18:38:20.975 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ServiceOrderRepository.
+2020-09-10 18:38:20.975 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ServicePeoPleRepository.
+2020-09-10 18:38:20.975 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ServiceRepository.
+2020-09-10 18:38:20.976 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ShoppingCartRepository.
+2020-09-10 18:38:20.976 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.SupplyRepository.
+2020-09-10 18:38:20.976 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.UserOrderRepository.
+2020-09-10 18:38:20.977 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.UserRepository.
+2020-09-10 18:38:20.977 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+2020-09-10 18:38:21.290 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a969bb26] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-10 18:38:21.533 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-09-10 18:38:21.546 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-09-10 18:38:21.554 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-10 18:38:21.554 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-09-10 18:38:21.676 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-10 18:38:21.676 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1415 ms
+2020-09-10 18:38:21.799 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-09-10 18:38:22.119 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-09-10 18:38:22.211 [INFO ] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-09-10 18:38:22.280 [INFO ] org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-09-10 18:38:22.282 [INFO ] org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-09-10 18:38:22.406 [INFO ] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-09-10 18:38:22.555 [INFO ] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-09-10 18:38:23.276 [INFO ] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-10 18:38:23.666 [INFO ] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-09-10 18:38:24.525 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-09-10 18:38:24.552 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2020-09-10 18:38:24.554 [INFO ] com.flower.FlowerApplication - Started FlowerApplication in 4.91 seconds (JVM running for 6.141)
+2020-09-10 18:39:30.413 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-10 18:39:30.413 [INFO ] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-10 18:39:30.422 [INFO ] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2020-09-10 18:46:33.979 [INFO ] com.flower.FlowerApplication - Starting FlowerApplication on LAPTOP-6S1ADEMD with PID 7428 (D:\FileRecv\2\flower\target\classes started by 张耘荧 in D:\FileRecv\2\flower)
+2020-09-10 18:46:33.982 [INFO ] com.flower.FlowerApplication - No active profile set, falling back to default profiles: default
+2020-09-10 18:46:34.711 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-10 18:46:34.712 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-10 18:46:34.860 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 137ms. Found 12 repository interfaces.
+2020-09-10 18:46:34.872 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-10 18:46:34.873 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-10 18:46:34.896 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.AddressRepository.
+2020-09-10 18:46:34.897 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.CommentRepository.
+2020-09-10 18:46:34.897 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.DynamicRepository.
+2020-09-10 18:46:34.898 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.FlowerRepository.
+2020-09-10 18:46:34.898 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.SellerRepository.
+2020-09-10 18:46:34.899 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ServiceOrderRepository.
+2020-09-10 18:46:34.899 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ServicePeoPleRepository.
+2020-09-10 18:46:34.899 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ServiceRepository.
+2020-09-10 18:46:34.900 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ShoppingCartRepository.
+2020-09-10 18:46:34.900 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.SupplyRepository.
+2020-09-10 18:46:34.900 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.UserOrderRepository.
+2020-09-10 18:46:34.901 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.UserRepository.
+2020-09-10 18:46:34.901 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+2020-09-10 18:46:35.265 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$53df1432] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-10 18:46:35.523 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-09-10 18:46:35.539 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-09-10 18:46:35.547 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-10 18:46:35.547 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-09-10 18:46:35.674 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-10 18:46:35.674 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1620 ms
+2020-09-10 18:46:35.829 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-09-10 18:46:36.011 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-09-10 18:46:36.060 [INFO ] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-09-10 18:46:36.123 [INFO ] org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-09-10 18:46:36.125 [INFO ] org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-09-10 18:46:36.260 [INFO ] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-09-10 18:46:36.417 [INFO ] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-09-10 18:46:37.346 [INFO ] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-10 18:46:37.919 [INFO ] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-09-10 18:46:38.717 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-09-10 18:46:38.740 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2020-09-10 18:46:38.742 [INFO ] com.flower.FlowerApplication - Started FlowerApplication in 5.254 seconds (JVM running for 7.637)
+2020-09-10 18:46:46.820 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-10 18:46:46.820 [INFO ] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-10 18:46:46.828 [INFO ] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-09-10 18:48:44.618 [INFO ] com.flower.FlowerApplication - Starting FlowerApplication on LAPTOP-6S1ADEMD with PID 17376 (D:\FileRecv\2\flower\target\classes started by 张耘荧 in D:\FileRecv\2\flower)
+2020-09-10 18:48:44.623 [INFO ] com.flower.FlowerApplication - No active profile set, falling back to default profiles: default
+2020-09-10 18:48:45.499 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-10 18:48:45.499 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-10 18:48:45.655 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 145ms. Found 12 repository interfaces.
+2020-09-10 18:48:45.668 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-10 18:48:45.669 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-10 18:48:45.693 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.AddressRepository.
+2020-09-10 18:48:45.694 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.CommentRepository.
+2020-09-10 18:48:45.694 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.DynamicRepository.
+2020-09-10 18:48:45.695 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.FlowerRepository.
+2020-09-10 18:48:45.695 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.SellerRepository.
+2020-09-10 18:48:45.695 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ServiceOrderRepository.
+2020-09-10 18:48:45.696 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ServicePeoPleRepository.
+2020-09-10 18:48:45.696 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ServiceRepository.
+2020-09-10 18:48:45.696 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ShoppingCartRepository.
+2020-09-10 18:48:45.697 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.SupplyRepository.
+2020-09-10 18:48:45.697 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.UserOrderRepository.
+2020-09-10 18:48:45.698 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.UserRepository.
+2020-09-10 18:48:45.698 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+2020-09-10 18:48:46.094 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bde4a2fa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-10 18:48:46.360 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-09-10 18:48:46.374 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-09-10 18:48:46.382 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-10 18:48:46.382 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-09-10 18:48:46.513 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-10 18:48:46.514 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1794 ms
+2020-09-10 18:48:46.675 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-09-10 18:48:46.863 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-09-10 18:48:46.916 [INFO ] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-09-10 18:48:46.993 [INFO ] org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-09-10 18:48:46.995 [INFO ] org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-09-10 18:48:47.140 [INFO ] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-09-10 18:48:47.298 [INFO ] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-09-10 18:48:48.132 [INFO ] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-10 18:48:48.508 [INFO ] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-09-10 18:48:49.288 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-09-10 18:48:49.311 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2020-09-10 18:48:49.313 [INFO ] com.flower.FlowerApplication - Started FlowerApplication in 5.342 seconds (JVM running for 6.492)
+2020-09-10 18:48:54.717 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-10 18:48:54.718 [INFO ] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-10 18:48:54.727 [INFO ] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2020-09-10 18:49:05.857 [INFO ] com.flower.FlowerApplication - Starting FlowerApplication on LAPTOP-6S1ADEMD with PID 15012 (D:\FileRecv\2\flower\target\classes started by 张耘荧 in D:\FileRecv\2\flower)
+2020-09-10 18:49:05.860 [INFO ] com.flower.FlowerApplication - No active profile set, falling back to default profiles: default
+2020-09-10 18:49:06.672 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-10 18:49:06.672 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-10 18:49:06.810 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 131ms. Found 12 repository interfaces.
+2020-09-10 18:49:06.820 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-10 18:49:06.822 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-10 18:49:06.843 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.AddressRepository.
+2020-09-10 18:49:06.844 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.CommentRepository.
+2020-09-10 18:49:06.844 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.DynamicRepository.
+2020-09-10 18:49:06.844 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.FlowerRepository.
+2020-09-10 18:49:06.845 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.SellerRepository.
+2020-09-10 18:49:06.845 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ServiceOrderRepository.
+2020-09-10 18:49:06.845 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ServicePeoPleRepository.
+2020-09-10 18:49:06.846 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ServiceRepository.
+2020-09-10 18:49:06.846 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.ShoppingCartRepository.
+2020-09-10 18:49:06.846 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.SupplyRepository.
+2020-09-10 18:49:06.846 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.UserOrderRepository.
+2020-09-10 18:49:06.847 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flower.repository.UserRepository.
+2020-09-10 18:49:06.847 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+2020-09-10 18:49:07.186 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f7350fad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-10 18:49:07.510 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-09-10 18:49:07.524 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-09-10 18:49:07.536 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-10 18:49:07.537 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-09-10 18:49:07.698 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-10 18:49:07.698 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1720 ms
+2020-09-10 18:49:07.833 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-09-10 18:49:07.993 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-09-10 18:49:08.038 [INFO ] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-09-10 18:49:08.097 [INFO ] org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-09-10 18:49:08.098 [INFO ] org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-09-10 18:49:08.212 [INFO ] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-09-10 18:49:08.338 [INFO ] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-09-10 18:49:09.018 [INFO ] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-10 18:49:09.364 [INFO ] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-09-10 18:49:10.008 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-09-10 18:49:10.028 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2020-09-10 18:49:10.030 [INFO ] com.flower.FlowerApplication - Started FlowerApplication in 4.747 seconds (JVM running for 6.292)
+2020-09-10 18:49:15.265 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-10 18:49:15.265 [INFO ] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-10 18:49:15.272 [INFO ] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms

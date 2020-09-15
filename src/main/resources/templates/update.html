@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>修改</title>
+		<link rel="stylesheet" href="../static/css/layui.css">
+		<style>
+			.bg{
+				background-color: rgba(0,0,0,0.6);
+				width: 700px;
+				height: 450px;
+			}
+			.layui-form-label{
+				color: #FFFFFF;
+				font-weight: 600;
+			}
+			.layui-input ,.select{
+				width: 500px;
+			}
+			.layui-form{
+				padding-top: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		 <div class="bg">
+<form class="layui-form" action="" lay-filter="example">
+  <div class="layui-form-item">
+    <label class="layui-form-label">鲜花名</label>
+    <div class="layui-input-block">
+      <input type="text" name="username" lay-verify="title" autocomplete="off" placeholder="请输鲜花名" class="layui-input">
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">类别</label>
+    <div class="layui-input-block">
+      <input type="text" name="username" lay-verify="title" autocomplete="off" placeholder="请输类别" class="layui-input">
+    </div>
+  </div>
+
+  <div class="layui-form-item">
+    <label class="layui-form-label">适宜人群</label>
+    <div class="layui-input-block select">
+      <select name="interest" lay-filter="aihao">
+        <option value=""></option>
+        <option value="0">朋友</option>
+        <option value="1">爱人</option>
+        <option value="2">女性</option>
+        <option value="3">恋人</option>
+        <option value="4">领导</option>
+        <option value="4">父母</option>
+        <option value="4">客户</option>
+        <option value="4">家人</option>
+      </select>
+    </div>
+  </div>
+  
+
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button type="submit" class="layui-btn" lay-submit="" lay-filter="demo1">立即提交</button>
+      <button class="layui-btn layui-bg-red" onclick="guanbi()">关闭</button>
+    </div>
+  </div>
+</form>
+</div>
+
+<script type="text/javascript" src="../static/js/jquery-3.4.1.js" ></script>
+<script type="text/javascript" src="../static/js/jquery-3.4.1.min.js" ></script>
+<script type="text/javascript" src="../static/js/layer.js" ></script>
+<script type="text/javascript" src="../static/js/layui.js" ></script>
+<script type="text/javascript" src="../static/js/layui.all.js" ></script>
+
+
+<script>
+	//当在iframe页面关闭自身时，在iframe页执行以下js脚本
+	function guanbi(){
+		var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+parent.layer.close(index); //再执行关闭
+	}
+
+</script>
+	</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <style>
+  	.list>td{
+  		text-align: center;
+  	}
+  </style>
+  <title>layout 后台大布局 - Layui</title>
+  <link rel="stylesheet" href="../static/css/layui.css">
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+  <div class="layui-header">
+    <div class="layui-logo">鲜花商城</div>
+    
+    <ul class="layui-nav layui-layout-right">
+    	<li class="layui-nav-item">
+        <a href="javascript:;">其它系统</a>
+        <dl class="layui-nav-child">
+          <dd><a href="">邮件管理</a></dd>
+          <dd><a href="">消息管理</a></dd>
+          <dd><a href="">授权管理</a></dd>
+        </dl>
+      </li>
+      <li class="layui-nav-item">
+        <a href="javascript:;">
+          <img src="../static/img/headPhoto.jpg" class="layui-nav-img">
+          淮南
+        </a>
+        <dl class="layui-nav-child">
+          <dd><a href="">基本资料</a></dd>
+          <dd><a href="">安全设置</a></dd>
+        </dl>
+      </li>
+      <li class="layui-nav-item"><a href="">退了</a></li>
+    </ul>
+  </div>
+  
+  <div class="layui-side layui-bg-black">
+    <div class="layui-side-scroll">
+      <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+      <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+        <li class="layui-nav-item layui-nav-itemed">
+          <a class="" href="javascript:;">商城
+          	<span class="layui-nav-more"></span>
+          </a>
+          <dl class="layui-nav-child">
+            <!--<dd><a href="flowerType.html">鲜花分类</a></dd>-->
+            <dd><a href="../html/flowerList.html">鲜花列表</a></dd>
+            <dd><a href="../html/flowerLanguage.html">花语列表</a></dd>
+            <!--<dd><a href="">超链接</a></dd>-->
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">用户</a>
+          <dl class="layui-nav-child">
+            <dd><a href="../html/userList.html">用户列表</a></dd>
+            <dd><a href="javascript:;">角色管理</a></dd>
+            <!--<dd><a href="">超链接</a></dd>-->
+          </dl>
+        </li>
+        <li class="layui-nav-item"><a href="">订单列表</a></li>
+        <li class="layui-nav-item"><a href="">动态列表</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="layui-body">
+    <!-- 内容主体区域 -->
+    <div style="padding: 15px;">
+    	<table class="layui-hide" id="test">
+    		
+    		<tr class="list">
+    			<td>1</td>
+    			<td>淮南</td>
+    			<td>12345678910</td>
+    			<td>女</td>
+    			<td>成都</td>
+    			<td>2019-4-30</td>
+
+    		</tr>
+
+    	</table>
+    </div>
+    
+  </div>
+  
+  <div class="layui-footer">
+    <!-- 底部固定区域 -->
+    © © 鲜花商城
+  </div>
+</div>
+
+ 
+<script type="text/html" id="toolbarDemo">
+  <div class="layui-btn-container">
+    <button class="layui-btn layui-btn-sm" lay-event="getCheckData">获取选中行数据</button>
+    <button class="layui-btn layui-btn-sm" lay-event="getCheckLength">获取选中数目</button>
+    <button class="layui-btn layui-btn-sm" lay-event="isAll">验证是否全选</button>
+  </div>
+</script>
+ 
+<!--<script type="text/html" id="switchTpl">
+  <!-- 这里的 checked 的状态只是演示 -->
+  <input type="checkbox" name="sex" value="{{d.id}}" lay-skin="switch" lay-text="女|男" lay-filter="sexDemo" {{ d.id == 10003 ? 'checked' : '' }}>
+<!--
+</script>
+ -->
+<script type="text/html" id="checkboxTpl">
+  <!-- 这里的 checked 的状态只是演示 -->
+  <input type="checkbox" name="lock" value="{{d.id}}" title="锁定" lay-filter="lockDemo" {{ d.id == 10006 ? 'checked' : '' }}>
+</script>
+
+<script type="text/javascript" src="../static/js/jquery-3.4.1.js" ></script>
+<script type="text/javascript" src="../static/js/jquery-3.4.1.min.js" ></script>
+<script type="text/javascript" src="../static/js/layui.js" ></script>
+<script type="text/javascript" src="../static/js/layui.all.js" ></script>
+
+<script>
+//JavaScript代码区域
+layui.use('table', function(){
+  var table = layui.table
+  ,form = layui.form;
+  
+  table.render({
+    elem: '#test'
+    ,url:'../html/tableDemo.json'
+    ,cellMinWidth: 80
+    ,cols: [[
+      {type:'numbers'}
+      ,{type: 'checkbox'}
+      ,{field:'id', title:'ID', width:100, unresize: true, sort: true}
+      ,{field:'username', title:'用户名', templet: '#usernameTpl'}
+      ,{field:'phone', title: '电话'}
+      ,{field:'city', title:'城市'}
+      ,{field:'sex', title:'性别', width:85, templet: '#switchTpl', unresize: true}
+      ,{field:'joinTime', title:'加入时间'}
+      ,{field:'lock', title:'是否锁定', width:110, templet: '#checkboxTpl', unresize: true}
+    ]]
+    ,page: true
+  });
+  
+  //监听性别操作
+  form.on('switch(sexDemo)', function(obj){
+    layer.tips(this.value + ' ' + this.name + '：'+ obj.elem.checked, obj.othis);
+  });
+  
+  //监听锁定操作
+  form.on('checkbox(lockDemo)', function(obj){
+    layer.tips(this.value + ' ' + this.name + '：'+ obj.elem.checked, obj.othis);
+  });
+});
+</script>
+</body>
+</html>

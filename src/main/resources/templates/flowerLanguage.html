@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>layout 后台大布局 - Layui</title>
+  <link rel="stylesheet" href="../static/css/layui.css">
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+  <div class="layui-header">
+    <div class="layui-logo">鲜花商城</div>
+    <!-- 头部区域（可配合layui已有的水平导航） -->
+   
+    <ul class="layui-nav layui-layout-right">
+    	<li class="layui-nav-item">
+        <a href="javascript:;">其它系统</a>
+        <dl class="layui-nav-child">
+          <dd><a href="">邮件管理</a></dd>
+          <dd><a href="">消息管理</a></dd>
+          <dd><a href="">授权管理</a></dd>
+        </dl>
+      </li>
+      <li class="layui-nav-item">
+        <a href="javascript:;">
+          <img src="../img/headPhoto.jpg" class="layui-nav-img">
+          淮南
+        </a>
+        <dl class="layui-nav-child">
+          <dd><a href="">基本资料</a></dd>
+          <dd><a href="">安全设置</a></dd>
+        </dl>
+      </li>
+      <li class="layui-nav-item"><a href="">退了</a></li>
+    </ul>
+  </div>
+  
+  <div class="layui-side layui-bg-black">
+    <div class="layui-side-scroll">
+      <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+      <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+        <li class="layui-nav-item layui-nav-itemed">
+          <a class="" href="javascript:;">商城
+          	<span class="layui-nav-more"></span>
+          </a>
+          <dl class="layui-nav-child">
+            <!--<dd><a href="flowerType.html">鲜花分类</a></dd>-->
+            <dd><a href="../html/flowerList.html">鲜花列表</a></dd>
+            <dd><a href="../html/flowerLanguage.html">花语列表</a></dd>
+            <!--<dd><a href="">超链接</a></dd>-->
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">用户</a>
+          <dl class="layui-nav-child">
+            <dd><a href="../html/userList.html">用户列表</a></dd>
+            <dd><a href="javascript:;">角色管理</a></dd>
+            <!--<dd><a href="">超链接</a></dd>-->
+          </dl>
+        </li>
+        <li class="layui-nav-item"><a href="">订单列表</a></li>
+        <li class="layui-nav-item"><a href="">动态列表</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="layui-body">
+    <!-- 内容主体区域 -->
+    <div style="padding: 15px;">
+    	<div class="layui-form">
+  <table class="layui-table">
+    <colgroup>
+      <col width="150">
+      <col width="150">
+      <col width="200">
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+        <th>鲜花</th>
+        <th>花语</th>
+        <th>详解</th>
+      </tr> 
+    </thead>
+    <tbody>
+      <tr>
+        <td>白玫瑰</td>
+        <td>纯洁、高贵、天真和纯纯的爱。</td>
+        <td>1、尊敬；2、不被注意(不为人知)的美；3、诚实；4、纯纯的爱；
+        	5、甘心为你付出所有；6、高贵；7、智慧；8、纯洁、纯情、天真；9、我足以与你相配。</td>
+
+      </tr>
+      <tr>
+        <td>蓝色妖姬</td>
+        <td>清纯的爱和敦厚善良。</td>
+        <td>单枝：相守是一种承诺，人世轮回中，怎样才能拥有一份温柔的情意！
+
+双枝：相遇是一种宿命，心灵的交汇让我们有诉不尽的浪漫情怀。
+
+三枝：你是我最深的爱恋，希望永远铭记我们这段美丽的爱情故事！
+
+七枝：无尽的祝福。
+
+十一枝：一心一意。
+
+十二枝+满天星：哦，我的玫瑰情人，我要挑逗你、诱惑你、宠爱你、纵容你！我要你做我的蓝色精灵，对全世界扬起骄傲的唇角，在爱的天空中翱翔。
+
+十三枝：super junior only13，代表着宝蓝家族的13位王子，妖精会永远爱他们，很深很深。</td>
+
+      </tr>
+      <tr>
+        <td>白百合</td>
+        <td>纯洁、纯白、优雅、高贵、庄严、心心相印！</td>
+        <td>具有百年好合之含意，有深深祝福的意义。受到这种花的祝福的人具有清纯天真的性格，集众人宠爱于一身。而且还有一个美丽的传说。在欧洲中世纪时期，白百合被赋予了特殊的宗教意味。
+        	天主教义告诉我们，白百合花本来是黄色的，但因为圣母玛利亚采了它，它才变成了白色，从此，白百合又被叫做“圣母之花”，来象征圣母的纯洁和神圣。</td>
+
+      </tr>
+      <tr>
+        <td>白色郁金香</td>
+        <td>纯情、纯洁；失恋、失去的爱</td>
+
+      </tr>
+      <tr>
+        <td>白色康乃馨</td>
+        <td>吾爱永在、真情、纯洁。</td>
+        <td>1、甜美而可爱；2、天真无邪；3、纯洁的爱；4、给女性带来好运气的礼物；
+        	5、纯洁；6、纯洁的友谊；7、吾爱永在；8、信念；9、雅致的爱；10、真情；11、尊敬。</td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>
+    </div>
+  </div>
+  
+  <div class="layui-footer">
+    <!-- 底部固定区域 -->
+    © layui.com - 底部固定区域
+  </div>
+</div>
+
+ 
+<script type="text/html" id="toolbarDemo">
+  <div class="layui-btn-container">
+    <button class="layui-btn layui-btn-sm" lay-event="getCheckData">获取选中行数据</button>
+    <button class="layui-btn layui-btn-sm" lay-event="getCheckLength">获取选中数目</button>
+    <button class="layui-btn layui-btn-sm" lay-event="isAll">验证是否全选</button>
+  </div>
+</script>
+ 
+<script type="text/html" id="barDemo">
+  <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+  <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
+<script type="text/javascript" src="../static/js/layui.js" ></script>
+<script type="text/javascript" src="../static/js/layui.all.js" ></script>
+
+<script>
+//JavaScript代码区域
+</script>
+</body>
+</html>
