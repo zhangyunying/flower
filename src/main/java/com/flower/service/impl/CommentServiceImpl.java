@@ -17,8 +17,9 @@ public class CommentServiceImpl implements CommentService {
 
 
     @Override
-    public List<Comment> list(CommentVo commentVo) {
-        return commentRepository.findByFlowerId(commentVo.getFlowerId());
+    public List<Comment> list(int dynamicId) {
+        List<Comment> commentList = commentRepository.findByDynamicId(dynamicId);
+        return commentList;
     }
 
     @Override

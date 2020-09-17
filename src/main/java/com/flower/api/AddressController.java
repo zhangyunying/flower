@@ -32,12 +32,21 @@ public class AddressController {
     private AddressService addressService;
 
 
+    /**
+     * 地址列表
+     * @return
+     */
     @RequestMapping("/list")
     public String list() {
         List<Address> addressList = addressService.list();
         return Result.OK.data(addressList);
     }
 
+    /**
+     * 添加地址
+     * @param address
+     * @return
+     */
     @RequestMapping("/addAddress")
     public String addAddress(@RequestBody Address address) {
         addressService.addAddress(address);

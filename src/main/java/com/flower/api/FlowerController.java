@@ -5,10 +5,7 @@ import com.flower.reponse.Result;
 import com.flower.service.FlowerService;
 import com.flower.vo.FlowerQueryVo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -33,22 +30,31 @@ public class FlowerController {
      * 通过id查询鲜花信息
      * @return 响应结果
      */
-    @RequestMapping("/findById/{id}")
-    public String findById(@PathVariable Integer id) {
+    @RequestMapping("/findById")
+    public String findById(@RequestParam("id") Integer id) {
         Flower flower =  flowerService.findById(id);
         return Result.OK.data(flower);
     }
 
     /**
-     * 添加或者更新鲜花信息
+     * 添加鲜花信息
      * @return 响应结果
      */
-    @RequestMapping("/addOrUpdate")
-    public String addOrUpdate(@RequestBody Flower flower) {
-        System.out.println("打印flower"+flower);
+    @RequestMapping("/add")
+    public String add(@RequestBody Flower flower) {
         flowerService.addOrUpdate(flower);
         return Result.OK.str();
     }
 
+    /**
+     * 更新鲜花信息
+     * @return 响应结果
+     */
+    @RequestMapping("/update")
+    public String update(@RequestParam("flowerId") int flowerId) {
+        Flower flower = flowerService.findById(flowerId);
+        flowerService.addOrUpdate(flower);
+        return Result.OK.str();
+    }
 
 }

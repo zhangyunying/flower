@@ -7,4 +7,6 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
 public interface DynamicRepository extends JpaRepository<Dynamic,Integer>,JpaSpecificationExecutor<Dynamic> {
 
+    Dynamic findByDynamicId(int dynamicId);
+
 }

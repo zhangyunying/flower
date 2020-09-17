@@ -47,4 +47,9 @@ public class SupplyServiceImpl implements SupplyService {
     public void save(Supply supply) {
         supplyRepository.save(supply);
     }
+
+    @Override
+    public Supply findSupplyId(int supplyId) {
+        return supplyRepository.findBySupplyId(supplyId);
+    }
 }

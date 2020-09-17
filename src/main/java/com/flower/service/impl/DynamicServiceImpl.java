@@ -31,7 +31,12 @@ public class DynamicServiceImpl implements DynamicService {
     }
 
     @Override
-    public void saveOrUpdate(Dynamic dynamic) {
+    public void save(Dynamic dynamic) {
         dynamicRepository.save(dynamic);
+    }
+
+    @Override
+    public Dynamic findById(int dynamicId) {
+        return dynamicRepository.findByDynamicId(dynamicId);
     }
 }

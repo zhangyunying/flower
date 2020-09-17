@@ -11,6 +11,7 @@ import com.flower.vo.DynamicVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
@@ -65,22 +66,37 @@ public class DynamicController {
     }
 
     /**
-     * 动态发布和修改
-     * @param dynamicVo 动态信息获取
+     * 动态发布
+     * @param dynamicVo
      * @return 返回登录结果
      */
-    @RequestMapping(value = "/saveOrUpdate")
-    public String saveOrUpdate(@RequestBody DynamicVo dynamicVo) {
+    @RequestMapping(value = "/publish")
+    public String publish(@RequestBody DynamicVo dynamicVo) {
 
         Dynamic dynamic = new Dynamic();
-        BeanUtil.copyProperties(dynamicVo, dynamic);
-        if (dynamicVo.getDynamicId() != null) {
-            dynamic.setUpdateTime(new Date());
-        } else {
-            dynamic.setPublishTime(new Date());
-        }
-        dynamicService.saveOrUpdate(dynamic);
+//        BeanUtil.copyProperties(dynamicVo, dynamic);
+//        if (dynamicVo.getDynamicId() != null) {
+//            dynamic.setUpdateTime(new Date());
+//        } else {
+//            dynamic.setPublishTime(new Date());
+//        }
+        dynamic.setPublishTime(new Date());
+        dynamicService.save(dynamic);
         return Result.OK.str();
     }
+
+    /**
+     * 动态修改
+     * @return 返回登录结果
+     */
+    @RequestMapping(value = "/update")
+    public String update(@RequestParam("dynamicId") int dynamicId) {
+
+        Dynamic dynamic = dynamicService.findById(dynamicId);
+        dynamic.setUpdateTime(new Date());
+        dynamicService.save(dynamic);
+        return Result.OK.str();
+    }
+
 
 }

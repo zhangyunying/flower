@@ -18,7 +18,9 @@ public class ServiceServiceImpl implements ServiceService {
     @Override
     public List<com.flower.entity.Service> list(String keyword) {
         if (StrUtil.isNotBlank(keyword)) {
-            return serviceRepository.findAll((Specification<com.flower.entity.Service>) (root, criteriaQuery, criteriaBuilder) -> criteriaBuilder.like(root.get("serviceName"), "%" + keyword + "%"));
+            return serviceRepository.findAll((Specification<com.flower.entity.Service>)
+                    (root, criteriaQuery, criteriaBuilder) ->
+                    criteriaBuilder.like(root.get("serviceName"), "%" + keyword + "%"));
         }
         return serviceRepository.findAll();
     }

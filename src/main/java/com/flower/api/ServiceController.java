@@ -18,7 +18,7 @@ public class ServiceController {
     @Autowired
     private ServiceService serviceService;
     /**
-     * 服务列表（带条件查询）
+     * 服务列表（根据关键字查询查询）
      * @param serviceVo
      * @return
      */
@@ -40,7 +40,7 @@ public class ServiceController {
 
 
     /**
-     * 服务查询
+     * 服务查询(根据服务id查询)
      * @param serviceVo
      * @return
      */

@@ -134,6 +134,11 @@ public class UserController {
         return Result.OK.str();
     }
 
+    /**
+     * 修改个人信息
+     * @param userInfoVo
+     * @return
+     */
     @RequestMapping("/updateUserInfo")
     public String updateUserInfo(@RequestBody UserInfoVo userInfoVo ) {
 

@@ -24,4 +24,6 @@ public interface SupplyService {
 
     void save(Supply supply);
 
+    Supply findSupplyId(int supplyId);
+
 }

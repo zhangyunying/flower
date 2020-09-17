@@ -14,6 +14,10 @@ public interface DynamicService {
     /**通过id删除动态信息*/
     void delete(Integer dynamicId);
 
-    /**保存或者更新动态信息 根据是否包含id*/
-    void saveOrUpdate(Dynamic dynamic);
+    /**
+     * 保存或者更新动态信息 根据是否包含id
+     * */
+    void save(Dynamic dynamic);
+
+    Dynamic findById(int dynamicId);
 }

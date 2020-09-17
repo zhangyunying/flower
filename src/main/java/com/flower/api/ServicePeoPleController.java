@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("service-peoPle")
+@RequestMapping("servicePeople")
 public class ServicePeoPleController {
 
     @Autowired
@@ -35,6 +35,7 @@ public class ServicePeoPleController {
     }
 
     /**
+     * 未用
      * 添加服务订单
      */
     @RequestMapping("/orderList")

@@ -8,7 +8,7 @@ import java.util.List;
 public interface CommentService {
 
     /**查询所有评论*/
-    List<Comment> list(CommentVo commentVo);
+    List<Comment> list(int dynamicId);
 
     /**通过评论id删除评论*/
     void delete(Integer commentId);

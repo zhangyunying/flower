@@ -10,4 +10,6 @@ public interface CommentRepository extends JpaRepository<Comment,Integer>{
 
     List<Comment> findByFlowerId(Integer flowerId);
 
+    List<Comment> findByDynamicId(Integer dynamicId);
+
 }
