@@ -35,10 +35,11 @@ public class ServicePeoPleController {
     }
 
     /**
-     * 服务订单列表
+     * 添加服务订单
      */
     @RequestMapping("/orderList")
-    public String orderList(@RequestBody ServiceOrderVo serviceOrderVo) {
+//    @RequestBody
+    public String orderList( ServiceOrderVo serviceOrderVo) {
         List<ServiceOrderVo> serviceList = servicePeoPleService.orderList(serviceOrderVo);
         return Result.OK.data(serviceList);
     }

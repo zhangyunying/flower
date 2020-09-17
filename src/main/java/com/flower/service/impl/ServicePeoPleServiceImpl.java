@@ -4,10 +4,7 @@ import cn.hutool.core.util.StrUtil;
 import com.flower.entity.Address;
 import com.flower.entity.ServiceOrder;
 import com.flower.entity.ServicePeople;
-import com.flower.repository.AddressRepository;
-import com.flower.repository.ServiceOrderRepository;
-import com.flower.repository.ServicePeoPleRepository;
-import com.flower.repository.ServiceRepository;
+import com.flower.repository.*;
 import com.flower.service.ServicePeoPleService;
 import com.flower.vo.ServiceOrderVo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,6 +29,9 @@ public class ServicePeoPleServiceImpl implements ServicePeoPleService {
     @Autowired
      ServiceRepository serviceRepository;
 
+    @Autowired
+    ServiceSkillsRepository serviceSkillsRepository;
+
     @Override
     public List<ServicePeople> list(String keyword) {
         if (StrUtil.isNotBlank(keyword)) {
@@ -49,9 +49,12 @@ public class ServicePeoPleServiceImpl implements ServicePeoPleService {
         for (ServiceOrder serviceOrder : serviceOrderList) {
             ServiceOrderVo serviceOrderVo1 = new ServiceOrderVo();
             int addressId = serviceOrder.getAddressId();
-            int serviceId = serviceOrder.getServiceId();
+//            int serviceId = serviceOrder.getServiceId();
+            int skillId = serviceOrder.getSkillId();
+            int serviceId = serviceSkillsRepository.findByServiceId(skillId);
             Date serviceOrderTime = serviceOrder.getServiceOrderTime();
-            int servicePeopleId = serviceOrder.getServicePeopleId();
+//            int servicePeopleId = serviceOrder.getServicePeopleId();
+            int servicePeopleId = serviceSkillsRepository.findByServicePeopleId(skillId);
             ServicePeople servicePeople = servicePeoPleRepository.findById(servicePeopleId).get();
             serviceOrderVo1.setServicePeoPleName(servicePeople.getServicePeopleName());
             serviceOrderVo1.setServiceOrderStatus(serviceOrderStatus);

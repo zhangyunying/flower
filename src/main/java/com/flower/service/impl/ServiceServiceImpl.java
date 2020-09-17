@@ -33,4 +33,9 @@ public class ServiceServiceImpl implements ServiceService {
     public void addService(com.flower.entity.Service service) {
         serviceRepository.save(service);
     }
+
+    @Override
+    public List<com.flower.entity.Service> serviceList() {
+        return serviceRepository.findAll();
+    }
 }

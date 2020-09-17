@@ -18,15 +18,26 @@ public class ServiceController {
     @Autowired
     private ServiceService serviceService;
     /**
-     * 服务列表
+     * 服务列表（带条件查询）
      * @param serviceVo
      * @return
      */
-    @RequestMapping("/list")
+    @RequestMapping("/queryList")
     public String list(@RequestBody ServiceVo serviceVo) {
        List<Service> serviceList = serviceService.list(serviceVo.getKeyword());
         return Result.OK.data(serviceList);
     }
+
+    /**
+     * 服务列表
+     * @return
+     */
+    @RequestMapping("/list")
+    public String list() {
+        List<Service> serviceList = serviceService.serviceList();
+        return Result.OK.data(serviceList);
+    }
+
 
     /**
      * 服务查询

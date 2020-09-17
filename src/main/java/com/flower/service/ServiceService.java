@@ -10,4 +10,6 @@ public interface ServiceService {
     Service findOne(String serviceId);
 
     void addService(Service service);
+
+    List<Service> serviceList();
 }

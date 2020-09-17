@@ -27,14 +27,8 @@ public class ServiceOrder {
     /**
      * 服务id
      */
-    @Column(name = "service_id")
-    private int serviceId;
-
-    /**
-     * 服务人员id
-     */
-    @Column(name = "service_people_id")
-    private int servicePeopleId;
+    @Column(name = "skill_id")
+    private int skillId;
 
     /**
      * 服务地址id
@@ -58,7 +52,7 @@ public class ServiceOrder {
      * 服务订单时间
      */
     @Column(name = "service_order_time")
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm")
     private Date serviceOrderTime;
 
 }

@@ -10,8 +10,11 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.criteria.Predicate;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+
+import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type.Root;
 
 @Service
 public class FlowerServiceImpl implements FlowerService {
@@ -23,14 +26,30 @@ public class FlowerServiceImpl implements FlowerService {
     /**根据条件查询所有的鲜花列表*/
     @Override
     public List<Flower> findAll(FlowerQueryVo flowerQueryVo) {
-        final String keyword = flowerQueryVo.getKeyword();
+//    public List<Flower> findAll(String flowerName, String flowerType, String flowerLanguage,String suitableFor) {
+//        final String keyword = flowerQueryVo.getKeyword();
+        final String flowerName = flowerQueryVo.getFlowerName();
+        final String flowerType = flowerQueryVo.getFlowerType();
+        final String flowerLanguage = flowerQueryVo.getFlowerLanguage();
+        final String suitableFor = flowerQueryVo.getSuitableFor();
         return flowerRepository.findAll((Specification<Flower>) (root, cq, cb) -> {
             Predicate conjunction = cb.conjunction();
-            if (StrUtil.isNotBlank(keyword)) {
-                conjunction.getExpressions().add(cb.like(root.get("flowerName"), "%" + keyword + "%"));
+            if (StrUtil.isNotBlank(flowerName)) {
+                conjunction.getExpressions().add(cb.like(root.get("flowerName"), "%" + flowerName + "%"));
+            }
+            if (StrUtil.isNotBlank(flowerType)) {
+                conjunction.getExpressions().add(cb.like(root.get("flowerType"), "%" + flowerType + "%"));
+            }
+            if (StrUtil.isNotBlank(flowerLanguage)) {
+                conjunction.getExpressions().add(cb.like(root.get("flowerLanguage"), "%" + flowerLanguage + "%"));
+            }
+            if (StrUtil.isNotBlank(suitableFor)) {
+                conjunction.getExpressions().add(cb.like(root.get("suitableFor"), "%" + suitableFor + "%"));
             }
             return conjunction;
         });
+//        return flowerRepository.find(flowerQueryVo.getFlowerName(),flowerQueryVo.getFlowerType(),
+//                flowerQueryVo.getFlowerLanguage(),flowerQueryVo.getSuitableFor());
     }
 
 
@@ -49,4 +68,5 @@ public class FlowerServiceImpl implements FlowerService {
     public void addOrUpdate(Flower flower) {
         flowerRepository.save(flower);
     }
+
 }

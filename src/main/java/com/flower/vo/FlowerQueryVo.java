@@ -15,5 +15,10 @@ public class FlowerQueryVo implements Serializable {
 （这个鲜花信息列表需要带上商家id，这样点进去才能知道是哪个商家的商品，就是这个我有点阐述不清楚，实现的效果就是点进去能知道是哪个商家的）*/
 
     /**根据关键词模糊查询,商品标题*/
-    private String keyword;
+//    private String keyword;
+
+    private  String flowerName;
+    private String flowerType;
+    private String flowerLanguage;
+    private String suitableFor;
 }
